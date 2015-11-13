@@ -11,16 +11,14 @@ public class CheckUser extends Dispatcher {
 
     public void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        User user = UserList.findUser(request.getParameter("user"));
-        if (user == null){
-            this.forward("/registration.html", request, response);
-        } else {
-            if
-                    (!user.getPassword().equals(request.getParameter("password"))){
-                this.forward("/registration.html", request, response);
-            } else {
+        ServletContext ctx = getServletContext();
+        Base base = new Base();
+        User user = new User(base.getUser(request.getParameter("user")));
+        ctx.setAttribute("user", user);
+            if (base.checkUser(request.getParameter("user"), request.getParameter("password"))){
                 this.forward("/successLogin.jsp", request, response);
+            } else {
+                this.forward("/registration.html", request, response);
             }
-        }
     }
 }

@@ -4,6 +4,16 @@ public class User  {
     private String user;
     private String password;
 
+    public User(){
+    }
+
+    public User(User user){
+        if (user != null) {
+            setUser(user.getUser());
+            setPassword(user.getPassword());
+        }
+    }
+
     public String getUser(){
         return user;
     }

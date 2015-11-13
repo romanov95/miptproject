@@ -17,7 +17,7 @@ public class AddUser extends Dispatcher {
             newUser.setPassword(password);
             ctx.setAttribute("user", newUser);
             boolean res = UserList.addUser(newUser);
-            if (res) {
+                if (res) {
                 this.forward("/successRegistration.jsp", request, response);
             } else {
                 this.forward("/errorRegistration.html", request, response);
