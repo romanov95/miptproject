@@ -1,18 +1,16 @@
 package servlets;
-import java.util.HashMap;
-import java.util.Map;
+import base.com.BaseUser;
 
 
 public class UserList  {
 
-    public static boolean addUser(User user){
-        boolean result = false;
-        if ((user.getPassword()!=null)&&(!"".equals(user.getPassword())))  {
-            Base base = new Base();
-            base.addUser(user.getUser(),user.getPassword());
-            result = true;
-        }
-        return result;
-    }
+//    public static boolean addUser(User user){
+//        boolean result = false;
+//        if ((user.getPassword()!=null)&&(!"".equals(user.getPassword())))  {
+//            BaseUser base = new BaseUser();
+//            base.addUser(user.getLogin(),user.getPassword());
+//            result = true;
+//        }
+//        return result;    }
 
 }

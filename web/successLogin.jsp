@@ -6,7 +6,14 @@
 <body>
 <br>
 <h1>Вход посетителя в систему прошел успешно</h1>
-<jsp:useBean id="user" class="servlets.User" scope="application"/>
-Пользователь: <%= user.getUser()%><br>
+<%
+  String login = (String) session.getAttribute("login");
+  String password = (String) session.getAttribute("password");
+%>
+<%--<jsp:useBean id="login" class="servlets.User" scope="application"/>--%>
+<%--Пользователь: <%= login.getLogin()%><br>--%>
+
+Login: <%= login%>
+Password: <%= password%>
 </body>
 </html>

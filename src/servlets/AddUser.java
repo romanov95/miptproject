@@ -10,13 +10,16 @@ public class AddUser extends Dispatcher {
             throws ServletException, IOException {
         ServletContext ctx = getServletContext();
         if (request.getParameter("save")!=null){
-            String user = request.getParameter("user");
-            String password = request.getParameter("password");
-            User newUser = new User();
-            newUser.setUser(user);
-            newUser.setPassword(password);
+//            String user = request.getParameter("user");
+//            String password = request.getParameter("password");
+//            User newUser = new User();
+//            newUser.setLogin(user);
+//            newUser.setPassword(password);
+
+            User newUser = new User(request.getParameter("user"),request.getParameter("password"));
             ctx.setAttribute("user", newUser);
-            boolean res = UserList.addUser(newUser);
+
+            boolean res = newUser.addUser(newUser);
                 if (res) {
                 this.forward("/successRegistration.jsp", request, response);
             } else {

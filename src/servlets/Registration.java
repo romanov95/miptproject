@@ -10,7 +10,7 @@ public class Registration extends Dispatcher {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
         ServletContext ctx = getServletContext();
-        if (request.getParameter("login")!=null){
+        if (request.getParameter("loginButton")!=null){
             this.forward("/CheckUser", request, response);
         } else if (request.getParameter("registration")!=null) {
             this.forward("/registration.html", request, response);

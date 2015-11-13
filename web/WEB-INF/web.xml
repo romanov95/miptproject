@@ -6,6 +6,11 @@
             <page-encoding>UTF-8</page-encoding>
         </jsp-property-group>
     </jsp-config>
+    
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+
     <servlet>
         <servlet-name>Dispatcher</servlet-name>
         <servlet-class>servlets.Dispatcher</servlet-class>
@@ -32,7 +37,7 @@
     </servlet>
     <servlet>
         <servlet-name>Base</servlet-name>
-        <servlet-class>servlets.Base</servlet-class>
+        <servlet-class>base.com.BaseUser</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Dispatcher</servlet-name>
