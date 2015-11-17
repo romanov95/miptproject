@@ -1,19 +1,19 @@
+<%@ page import="servlets.User" %>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Страница успешного входа в систему</title>
 </head>
 <body>
-<br>
-<h1>Вход посетителя в систему прошел успешно</h1>
 <%
-  String login = (String) session.getAttribute("login");
-  String password = (String) session.getAttribute("password");
+  User user = new User();
+  user.setUser((User)session.getAttribute("userSession"));
 %>
-<%--<jsp:useBean id="login" class="servlets.User" scope="application"/>--%>
-<%--Пользователь: <%= login.getLogin()%><br>--%>
 
-Login: <%= login%>
-Password: <%= password%>
+Вход посетителя <%= user.getLogin()%> в систему прошел успешно
+<form action="Login" method="post">
+  <input type="submit" name="cancelButton" value="Выйти">
+</form>
+
 </body>
 </html>

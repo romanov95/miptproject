@@ -1,15 +1,16 @@
 package servlets;
 
-import base.com.BaseUser;
+import base.com.Base;
 import org.apache.commons.codec.digest.DigestUtils;
 
+import javax.servlet.http.HttpServlet;
+import java.security.SecureRandom;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
-import java.util.Random;
 
-public class User  {
+public class User extends HttpServlet{
 
     private String login =  "";
     private String password = "";
@@ -23,11 +24,22 @@ public class User  {
         this.password = generatePas(password, this.salt);
     }
 
-    public boolean setUser(String login, String password, Long salt){
+
+    public void setUser(String login, String password){
+        this.login = login;
+        this.password = password;
+    }
+
+    public void setUser(User user){
+        this.login = user.getLogin();
+        this.password = user.getPassword();
+        this.salt = user.getSalt();
+    }
+
+    public void setUser(String login, String password, Long salt){
         this.login = login;
         this.password = password;
         this.salt = salt;
-        return true;
     }
 
     @Override
@@ -44,36 +56,18 @@ public class User  {
         return DigestUtils.sha256Hex(password + salt);
     }
     private Long generateSalt(){
-        Random random = new Random();
-        return random.nextLong();
+        SecureRandom secureRandom = new SecureRandom();
+        return secureRandom.nextLong();
     }
-
-//    public User(User login){
-//        if (login != null) {
-//            setLogin(login.getLogin());
-//            setPassword(login.getPassword());
-//        }
-//    }
-
-
-
 
     public String getLogin(){
         return login;
     }
-//    public void setLogin(String login){
-//        this.login = login;
-//    }
+
     public String getPassword(){
         return password;
     }
-//    public void setPassword(String password){
-//        this.password = password;
-//    }
-//    public void setSalt(){
-//        Random random = new Random();
-//        this.salt = random.nextLong();
-//    }
+
     public long getSalt(){
         return this.salt;
     }
@@ -83,22 +77,25 @@ public class User  {
         PreparedStatement preparedStatement = null;
         String insertUser = "INSERT  INTO users(login, password, salt) VALUES (?,?,?)";
         try {
-            preparedStatement = BaseUser.getConnection().prepareStatement(insertUser);
+            preparedStatement = Base.getConnection().prepareStatement(insertUser);
+            if (!tmpUser.getUser(tmpUser.getLogin())){
             preparedStatement.setString(1, tmpUser.getLogin());
             preparedStatement.setString(2, tmpUser.getPassword());
             preparedStatement.setLong(3, tmpUser.getSalt());
             preparedStatement.execute();
+            return true;
+            } else { return false;}
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
-        return  true;
     }
 
     public boolean getUser(String login) {
         PreparedStatement preparedStatement = null;
         String search = "SELECT login, password, salt FROM users WHERE login = ?";
         try {
-            preparedStatement = BaseUser.getConnection().prepareStatement(search);
+            preparedStatement = Base.getConnection().prepareStatement(search);
             preparedStatement.setString(1, login);
             ResultSet res = preparedStatement.executeQuery();
             while (res.next()){
@@ -111,14 +108,16 @@ public class User  {
         return false;
     }
 
-    public boolean checkUser (String login, String password) {
+    public boolean checkUser (User chUser) {
         User tmpUser = new User();
-        tmpUser.getUser(login);
-        User chUser = new User();
-        chUser.setUser(login,generatePas(password,tmpUser.getSalt()),tmpUser.getSalt());
+        tmpUser.getUser(chUser.getLogin());
+        chUser.setUser(chUser.getLogin(),generatePas(chUser.getPassword(),tmpUser.getSalt()),tmpUser.getSalt());
         return chUser.equals(tmpUser);
     }
 
-
-
+    public boolean checkUserSession (User chUser){
+        User tmpUser = new User();
+        tmpUser.getUser(chUser.getLogin());
+        return chUser.equals(tmpUser);
+    }
 }

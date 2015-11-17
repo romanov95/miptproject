@@ -4,16 +4,22 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 public class Registration extends Dispatcher {
     public String getServletInfo(){
-        return "Registration servlet";
+        return "Add user servlet";
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=utf-8");
-        ServletContext ctx = getServletContext();
-        if (request.getParameter("loginButton")!=null){
-            this.forward("/CheckUser", request, response);
-        } else if (request.getParameter("registration")!=null) {
-            this.forward("/registration.html", request, response);
+        if (request.getParameter("save")!=null){
+            User newUser = new User(request.getParameter("login"),request.getParameter("password"));
+            boolean res = newUser.addUser(newUser);
+                if (res) {
+                    HttpSession sessions = request.getSession();
+                    sessions.setAttribute("userSession", newUser);
+                    this.forward("/successRegistration.jsp", request, response);
+                } else {
+                this.forward("/errorRegistration.html", request, response);
+            }
+        } else if (request.getParameter("cancel")!=null){
+            this.forward("/login.jsp", request, response);
         }
     }
 }
