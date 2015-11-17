@@ -1,6 +1,9 @@
 package servlets;
 
 
+import base.com.Base;
+import base.com.BaseUser;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -26,9 +29,8 @@ public class sessionFilter implements Filter {
 
         HttpSession session = request.getSession(false);
         if ((session != null) && (session.getAttribute("userSession") != null)) {
-            User user = new User();
-            user.setUser((User) session.getAttribute("userSession"));
-            if (user.checkUserSession(user)) {
+            User user = new User((User) session.getAttribute("userSession"));
+            if (BaseUser.checkUserSession(user)) {
                 chain.doFilter(req, res);
             } else {
                 response.sendRedirect("errorAuthorization.jsp");

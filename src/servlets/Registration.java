@@ -1,4 +1,6 @@
 package servlets;
+import base.com.BaseUser;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -8,10 +10,10 @@ public class Registration extends Dispatcher {
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         if (request.getParameter("save")!=null){
             User newUser = new User(request.getParameter("login"),request.getParameter("password"));
-            boolean res = newUser.addUser(newUser);
-                if (res) {
+                if (BaseUser.addUser(newUser)) {
                     HttpSession sessions = request.getSession();
                     sessions.setAttribute("userSession", newUser);
                     this.forward("/successRegistration.jsp", request, response);

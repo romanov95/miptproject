@@ -6,8 +6,7 @@
 </head>
 <body>
 <%
-  User user = new User();
-  user.setUser((User)session.getAttribute("userSession"));
+  User user = new User((User)session.getAttribute("userSession"));
 %>
 
 Вход посетителя <%= user.getLogin()%> в систему прошел успешно

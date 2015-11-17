@@ -1,4 +1,6 @@
 package servlets;
+import base.com.BaseUser;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -9,15 +11,17 @@ public class Login extends Dispatcher {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
+
         if (request.getParameter("cancelButton")!=null){
             HttpSession sessions = request.getSession();
             sessions.invalidate();
             this.forward("/login.jsp", request, response);
         }
+
         if (request.getParameter("loginButton")!=null){
             User user = new User();
             user.setUser(request.getParameter("login"), request.getParameter("password"));
-            if (user.checkUser(user)){
+            if (BaseUser.checkUser(user)){
                 HttpSession sessions = request.getSession();
                 sessions.setAttribute("userSession", user);
                 this.forward("/successLogin.jsp", request, response);

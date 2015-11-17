@@ -12,11 +12,11 @@ import java.sql.SQLException;
 public class BaseUser {
 
     public static boolean addUser (User tmpUser) {
-        PreparedStatement preparedStatement = null;
-        String insertUser = "INSERT  INTO users(login, password, salt) VALUES (?,?,?)";
+
         try {
-            preparedStatement = Base.getConnection().prepareStatement(insertUser);
-            if (!tmpUser.getUser(tmpUser.getLogin())){
+            String insertUser = "INSERT  INTO users(login, password, salt) VALUES (?,?,?)";
+            PreparedStatement preparedStatement = Base.getConnection().prepareStatement(insertUser);
+            if (!BaseUser.checkUserInBase(tmpUser.getLogin())){
                 preparedStatement.setString(1, tmpUser.getLogin());
                 preparedStatement.setString(2, tmpUser.getPassword());
                 preparedStatement.setLong(3, tmpUser.getSalt());
@@ -29,16 +29,13 @@ public class BaseUser {
         }
     }
 
-    public static User getUser(String login) {
-        User user = new User();
-        PreparedStatement preparedStatement = null;
-        String search = "SELECT login, password, salt FROM users WHERE login = ?";
+    public static boolean checkUserInBase(String login){
         try {
-            preparedStatement = Base.getConnection().prepareStatement(search);
+            String search = "SELECT login, password, salt FROM users WHERE login = ?";
+            PreparedStatement preparedStatement = Base.getConnection().prepareStatement(search);
             preparedStatement.setString(1, login);
             ResultSet res = preparedStatement.executeQuery();
-            while (res.next()){
-                this.setUser(res.getString("login"), res.getString("password"), res.getLong("salt"));
+            if (res.next()) {
                 return true;
             }
         } catch (SQLException e) {
@@ -47,16 +44,31 @@ public class BaseUser {
         return false;
     }
 
-    public boolean checkUser (User chUser) {
-        User tmpUser = new User();
-        tmpUser.getUser(chUser.getLogin());
-        chUser.setUser(chUser.getLogin(),generatePas(chUser.getPassword(),tmpUser.getSalt()),tmpUser.getSalt());
+    public static User getUser(String login) {
+        try {
+            String search = "SELECT login, password, salt FROM users WHERE login = ?";
+            PreparedStatement preparedStatement = Base.getConnection().prepareStatement(search);
+            preparedStatement.setString(1, login);
+            ResultSet res = preparedStatement.executeQuery();
+            while (res.next()){
+                User user = new User(res.getString("login"), res.getString("password"), res.getLong("salt"));
+                return user;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        User user = new User();
+        return user;
+    }
+
+    public static boolean checkUser (User chUser) {
+        User tmpUser = new User(BaseUser.getUser(chUser.getLogin()));
+        chUser.setUser(chUser.getLogin(),chUser.getPassword(),tmpUser.getSalt());
         return chUser.equals(tmpUser);
     }
 
-    public boolean checkUserSession (User chUser){
-        User tmpUser = new User();
-        tmpUser.getUser(chUser.getLogin());
+    public static boolean checkUserSession (User chUser){
+        User tmpUser = new User(BaseUser.getUser(chUser.getLogin()));
         return chUser.equals(tmpUser);
     }
 }

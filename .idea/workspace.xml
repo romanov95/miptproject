@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc614096-e961-4086-9aa5-ebfa641f07a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlets/Login.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/errorAuthorization.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/errorLogin.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlets/sessionFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/testpage.jsp" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\WEB-INF\classes\com\ncedu\test\Authorization.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\WEB-INF\classes\com\ncedu\test\Hello.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\WEB-INF\classes\com\ncedu\test\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\WEB-INF\classes\servlets\AddUser.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\WEB-INF\classes\servlets\CheckUser.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\WEB-INF\classes\servlets\UserList.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\artifacts\testproject2_war_exploded\login.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\production\testproject2\com\ncedu\test\Authorization.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\production\testproject2\com\ncedu\test\Hello.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\production\testproject2\com\ncedu\test\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\production\testproject2\servlets\AddUser.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\production\testproject2\servlets\CheckUser.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\out\production\testproject2\servlets\UserList.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\com\ncedu\test\Authorization.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\com\ncedu\test\Hello.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\com\ncedu\test\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\com\ncedu\test\login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\servlets\CheckUser.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\servlets\UserList.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\web\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\web\login.html" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\base\com\BaseUser.java" afterPath="$PROJECT_DIR$/src/base/com/Base.java" />
-      <change type="MOVED" beforePath="C:\Users\Sergey\Documents\GitHub\miptproject\src\servlets\AddUser.java" afterPath="$PROJECT_DIR$/src/servlets/Registration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/WEB-INF/classes/servlets/Registration.class" afterPath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/WEB-INF/classes/servlets/Registration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/testproject2/servlets/Registration.class" afterPath="$PROJECT_DIR$/out/production/testproject2/servlets/Registration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/WEB-INF/classes/servlets/User.class" afterPath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/WEB-INF/classes/servlets/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/testproject2/servlets/User.class" afterPath="$PROJECT_DIR$/out/production/testproject2/servlets/User.class" />
+    <list default="true" id="cc614096-e961-4086-9aa5-ebfa641f07a2" name="Default" comment="Версия с правильным распределением по пакетам">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/com/BaseUser.java" afterPath="$PROJECT_DIR$/src/base/com/BaseUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/Login.java" afterPath="$PROJECT_DIR$/src/servlets/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/Registration.java" afterPath="$PROJECT_DIR$/src/servlets/Registration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/User.java" afterPath="$PROJECT_DIR$/src/servlets/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/registration.html" afterPath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration.html" afterPath="$PROJECT_DIR$/web/registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/successLogin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/successLogin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/sessionFilter.java" afterPath="$PROJECT_DIR$/src/servlets/sessionFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/successLogin.jsp" afterPath="$PROJECT_DIR$/web/successLogin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/successRegistration.jsp" afterPath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/successRegistration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/successRegistration.jsp" afterPath="$PROJECT_DIR$/web/successRegistration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/testproject2_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testproject2.iws" />
@@ -97,45 +59,63 @@
         <entry file="file://$PROJECT_DIR$/src/servlets/Login.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlets/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="5" selection-start-line="75" selection-start-column="3" selection-end-line="121" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.22081882">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1447760658739" expanded="true" signature="2000:2056" placeholder="INSERT INTO ..." />
-                <marker date="1447760658739" expanded="true" signature="2736:2791" placeholder="SELECT login..users..." />
+                <element signature="method#setUser#0;class#User#0" expanded="false" />
+                <element signature="method#setUser#1;class#User#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/com/BaseUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48213124">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1447760911849" expanded="true" signature="336:392" placeholder="INSERT INTO ..." />
-                <marker date="1447760911849" expanded="true" signature="1128:1183" placeholder="SELECT login..users..." />
+                <marker date="1447764420995" expanded="true" signature="303:359" placeholder="INSERT INTO ..." />
+                <marker date="1447764420995" expanded="true" signature="1052:1107" placeholder="SELECT login..users..." />
+                <marker date="1447764420995" expanded="true" signature="1590:1645" placeholder="SELECT login..users..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testpage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/testpage.jsp">
+      <file leaf-file-name="sessionFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/sessionFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.701613">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_logins.users" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/3b7eafac/d2914487-9a59-4c18-8276-ce2f6852e2de/data_logins..users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,59 +124,21 @@
       <file leaf-file-name="successLogin.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/successLogin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.129032">
-              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+            <state vertical-scroll-proportion="-6.83871">
+              <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="Registration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.693548">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/registration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.951612">
-              <caret line="21" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/com/Base.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="errorAuthorization.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/errorAuthorization.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.274194">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="32" />
-              <folding />
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -252,8 +194,6 @@
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/successRegistration.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/Registration.java" />
-        <option value="$PROJECT_DIR$/src/servlets/User.java" />
         <option value="$PROJECT_DIR$/src/servlets/Authorization.java" />
         <option value="$PROJECT_DIR$/web/Testsession.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/test.jsp" />
@@ -261,13 +201,15 @@
         <option value="$PROJECT_DIR$/web/errorAutorization.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/errorAutorization.jsp" />
         <option value="$PROJECT_DIR$/web/errorAuthorization.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/sessionFilter.java" />
         <option value="$PROJECT_DIR$/web/errorLogin.jsp" />
         <option value="$PROJECT_DIR$/web/exitLogin.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/successLogin.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/Login.java" />
         <option value="$PROJECT_DIR$/web/testpage.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/Registration.java" />
+        <option value="$PROJECT_DIR$/src/servlets/sessionFilter.java" />
+        <option value="$PROJECT_DIR$/src/servlets/Login.java" />
+        <option value="$PROJECT_DIR$/web/successLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/User.java" />
         <option value="$PROJECT_DIR$/src/base/com/BaseUser.java" />
       </list>
     </option>
@@ -362,24 +304,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testproject2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miptproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -705,6 +629,9 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Unknown" factoryName="Unknown">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -821,7 +748,7 @@
       <workItem from="1447452986819" duration="51000" />
       <workItem from="1447598635592" duration="16605000" />
       <workItem from="1447673387003" duration="2179000" />
-      <workItem from="1447757045753" duration="3860000" />
+      <workItem from="1447757045753" duration="7364000" />
     </task>
     <task id="LOCAL-00001" summary="fff">
       <created>1446656046681</created>
@@ -841,11 +768,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447451439720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New rewritten version with session">
+      <created>1447760950269</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1447760950269</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74178000" />
+    <option name="totallyTimeSpent" value="77682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1359" y="-2716" width="4832" height="2632" extended-state="6" />
@@ -859,12 +792,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290762" sideWeight="0.50085104" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6934866" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3222648" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3222648" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10978723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32976377" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="1068" y="253" width="1047" height="1208" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18510638" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18510638" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992762" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25225806" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -895,11 +828,13 @@
     <MESSAGE value="fff" />
     <MESSAGE value="Version with base and sha password" />
     <MESSAGE value="New rewritten version. Good strucher" />
-    <option name="LAST_COMMIT_MESSAGE" value="New rewritten version. Good strucher" />
+    <MESSAGE value="New rewritten version with session" />
+    <MESSAGE value="Версия с правильным распределением по пакетам" />
+    <option name="LAST_COMMIT_MESSAGE" value="Версия с правильным распределением по пакетам" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="58" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -948,8 +883,8 @@
           <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447760658739" expanded="true" signature="2000:2056" placeholder="INSERT INTO ..." />
-            <marker date="1447760658739" expanded="true" signature="2736:2791" placeholder="SELECT login..users..." />
+            <element signature="method#setUser#0;class#User#0" expanded="false" />
+            <element signature="method#setUser#1;class#User#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1170,18 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/3b7eafac/d2914487-9a59-4c18-8276-ce2f6852e2de/data_logins..users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/Dispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1190,31 +1113,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Registration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/errorRegistration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.693548">
           <caret line="9" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/sessionFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1266,22 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/successLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.129032">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/errorAuthorization.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.274194">
@@ -1298,26 +1185,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/User.java">
+    <entry file="file://$PROJECT_DIR$/src/servlets/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="121" column="5" selection-start-line="75" selection-start-column="3" selection-end-line="121" selection-end-column="5" />
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447760658739" expanded="true" signature="2000:2056" placeholder="INSERT INTO ..." />
-            <marker date="1447760658739" expanded="true" signature="2736:2791" placeholder="SELECT login..users..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/successLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.83871">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3b7eafac/d2914487-9a59-4c18-8276-ce2f6852e2de/data_logins..users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/com/BaseUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48213124">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447760911849" expanded="true" signature="336:392" placeholder="INSERT INTO ..." />
-            <marker date="1447760911849" expanded="true" signature="1128:1183" placeholder="SELECT login..users..." />
+            <marker date="1447764420995" expanded="true" signature="303:359" placeholder="INSERT INTO ..." />
+            <marker date="1447764420995" expanded="true" signature="1052:1107" placeholder="SELECT login..users..." />
+            <marker date="1447764420995" expanded="true" signature="1590:1645" placeholder="SELECT login..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/sessionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22081882">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUser#0;class#User#0" expanded="false" />
+            <element signature="method#setUser#1;class#User#0" expanded="false" />
           </folding>
         </state>
       </provider>
