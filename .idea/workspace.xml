@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc614096-e961-4086-9aa5-ebfa641f07a2" name="Default" comment="Версия с правильным распределением по пакетам">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/com/BaseUser.java" afterPath="$PROJECT_DIR$/src/base/com/BaseUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/Login.java" afterPath="$PROJECT_DIR$/src/servlets/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/Registration.java" afterPath="$PROJECT_DIR$/src/servlets/Registration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/User.java" afterPath="$PROJECT_DIR$/src/servlets/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/sessionFilter.java" afterPath="$PROJECT_DIR$/src/servlets/sessionFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/successLogin.jsp" afterPath="$PROJECT_DIR$/web/successLogin.jsp" />
+    <list default="true" id="cc614096-e961-4086-9aa5-ebfa641f07a2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testproject2.iws" />
@@ -748,7 +742,7 @@
       <workItem from="1447452986819" duration="51000" />
       <workItem from="1447598635592" duration="16605000" />
       <workItem from="1447673387003" duration="2179000" />
-      <workItem from="1447757045753" duration="7364000" />
+      <workItem from="1447757045753" duration="7373000" />
     </task>
     <task id="LOCAL-00001" summary="fff">
       <created>1446656046681</created>
@@ -774,11 +768,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447760950269</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Версия с правильным распределением по пакетам">
+      <created>1447764429231</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1447764429231</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77682000" />
+    <option name="totallyTimeSpent" value="77691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1359" y="-2716" width="4832" height="2632" extended-state="6" />
