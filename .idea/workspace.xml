@@ -742,7 +742,7 @@
       <workItem from="1447452986819" duration="51000" />
       <workItem from="1447598635592" duration="16605000" />
       <workItem from="1447673387003" duration="2179000" />
-      <workItem from="1447757045753" duration="7373000" />
+      <workItem from="1447757045753" duration="7383000" />
     </task>
     <task id="LOCAL-00001" summary="fff">
       <created>1446656046681</created>
@@ -774,11 +774,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447764429231</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Версия с правильным распределением по пакетам">
+      <created>1447764438234</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1447764438234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77691000" />
+    <option name="totallyTimeSpent" value="77701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1359" y="-2716" width="4832" height="2632" extended-state="6" />
